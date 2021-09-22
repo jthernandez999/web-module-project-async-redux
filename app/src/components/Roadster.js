@@ -24,13 +24,13 @@ const Roadster = (props) => {
     
  console.log('newProps', props)
     return (
-        <div>
-            <img src={roadster.flickr_images} height={600} width={850} alt='spaceX' />
+        <div className='roadster'>
+            <img className='roadsterImg' src={roadster.flickr_images} height={600} width={850} alt='spaceX' />
             <h2>Name: {roadster.name}</h2>
             <h4>Details: {roadster.details}</h4>
             <h4>Launch Date: {roadster.launch_date_utc} </h4>
             <h4></h4>
-            <ul>
+            <ul className='details_list'>
                 <li>Mass KG: {roadster.launch_mass_kg}</li>
                 <li>Mass LBS: {roadster.launch_mass_lbs}</li>
                 <li>Norad Id:{roadster.norad_id}</li>
